@@ -8,12 +8,12 @@
 flavor_list = ['Mathematical Analysis', 'Mathematical Statistics',
                      'Machine Learning', 'Statistical Learning']
 
-# range
+# range()
 for i in range(len(flavor_list)):
     flavor = flavor_list[i]
     print('%d: %s' % (i + 1, flavor))
 
-# enumerate
+# enumerate()
 for i, flavor in enumerate(flavor_list):
     print('%d: %s' % (i + 1, flavor))
 
