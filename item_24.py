@@ -73,3 +73,11 @@ with TemporaryDirectory() as tmpdir:
     result = mapreduce(tmpdir)
 
 print('There are', result, 'lines')
+
+class GenericInputData(object):
+    def read(self):
+        raise NotImplementedError
+
+    @classmethod
+    def generate_inputs(clscls, config):
+        raise NotImplementedError
