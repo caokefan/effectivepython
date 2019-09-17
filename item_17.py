@@ -1,9 +1,9 @@
-# be careful when iterating over the parameters: if the argument is an iterator , it
+# be careful when iterating over the parameters: 1) if the argument is an iterator , it
 # can cause strange behavior and miss some values.
-# python iterator protocol which describes how containers and iterators should
+# 2) python iterator protocol which describes how containers and iterators should
 # interact with iter() and next() built-in functions, 'for' loops and related expressions.
-# implement __iter__() as a generator to define your own container type.
-# to judge whether a value is an iterator or a container, call the iter() twice
+# 3) implement __iter__() as a generator to define your own container type.
+# 4) to judge whether a value is an iterator or a container, call the iter() twice
 # while the result is same iterator, call next() to make the iterator go one step further.
 
 def normalize(numbers):
